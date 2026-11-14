@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import "./module-pages.css";
+import "./astral-modules.css";
 
 export const metadata: Metadata = {
   title: "Mythic Studio — Astral Elements Engine",

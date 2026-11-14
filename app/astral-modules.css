@@ -1,0 +1,60 @@
+/* Interactive Weather Dominion, Fusion Lab, Creator Market, and Game Bridge workspaces. */
+.astral-workspace,.market-layout{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:18px;margin-top:48px;position:relative;z-index:1}
+.astral-panel,.market-card{background:linear-gradient(145deg,rgba(255,255,255,.045),rgba(255,255,255,.015));border:1px solid rgba(231,220,255,.14);padding:28px}
+.astral-panel h2,.market-heading h2{font-size:clamp(25px,3vw,36px);letter-spacing:-.045em;margin:8px 0 28px}
+.astral-kicker{color:#c5b2ec;font-size:9px;font-weight:700;letter-spacing:.19em;margin:0 0 12px}
+.astral-muted{color:#aaa5bd;font-size:12px;line-height:1.8}
+.astral-field{color:#c9c2d7;display:grid;font-size:11px;gap:10px;margin:19px 0}
+.astral-field strong{color:#e7d8ff;float:right}
+.astral-field input:not([type=range]),.astral-field select,.astral-field textarea,.market-filters input,.market-filters select{background:#100e1b;border:1px solid rgba(231,220,255,.2);border-radius:3px;color:#f5f2ff;font:inherit;outline:none;padding:12px;width:100%}
+.astral-field input:focus,.astral-field select:focus,.astral-field textarea:focus,.market-filters input:focus,.market-filters select:focus{border-color:#bd9aff}
+.astral-field input[type=range]{accent-color:#bd9aff;width:100%}
+.astral-field textarea{resize:vertical}
+.astral-button{background:#d3baff;border:0;border-radius:3px;color:#171020;cursor:pointer;font-size:11px;font-weight:700;margin-top:10px;padding:13px 17px}
+.astral-button:hover{background:#e4d5ff}
+.astral-preview{min-height:400px}
+.weather-orb{align-items:center;background:radial-gradient(circle at 35% 30%,#d9c6ff,#7450a9 45%,#171020 75%);border:1px solid rgba(219,195,255,.5);border-radius:50%;box-shadow:0 0 75px rgba(151,103,219,.2);display:flex;height:155px;justify-content:center;margin:15px auto 25px;width:155px}
+.weather-orb span{color:#fff;font-size:54px;text-shadow:0 0 22px #fff}
+.weather-storm{background:radial-gradient(circle at 35% 30%,#c4e3ff,#425d9a 48%,#101322 78%)}
+.weather-snow{background:radial-gradient(circle at 35% 30%,#fff,#8db8d9 48%,#17243b 78%)}
+.weather-fog{background:radial-gradient(circle at 35% 30%,#e5e2f2,#8b879e 48%,#282637 78%)}
+.weather-rain{background:radial-gradient(circle at 35% 30%,#b3d6ff,#456b9a 48%,#111a2d 78%)}
+.astral-preview h3{text-align:center;font-family:Manrope,sans-serif;font-size:23px;margin:8px 0}
+.astral-preview>.astral-muted{text-align:center}
+.astral-stat-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin:25px 0}
+.astral-stat-grid div{background:rgba(255,255,255,.035);padding:13px 8px;text-align:center}
+.astral-stat-grid strong,.astral-stat-grid span{display:block}
+.astral-stat-grid strong{color:#e4d5ff;font-size:18px}
+.astral-stat-grid span{color:#9992a9;font-size:9px;margin-top:5px}
+.astral-presets{display:flex;flex-wrap:wrap;gap:8px;margin-top:22px}
+.astral-presets p{flex-basis:100%}
+.astral-presets button{background:transparent;border:1px solid rgba(231,220,255,.2);color:#d9c8f5;cursor:pointer;font-size:10px;padding:9px}
+.astral-saved{border-top:1px solid rgba(231,220,255,.13);color:#bdb5cc;font-size:11px;line-height:1.9;margin-top:24px;padding-top:17px}
+.astral-saved>div{border-bottom:1px solid rgba(231,220,255,.07);padding:6px 0}
+.fusion-plus{color:#bd9aff;font-size:30px;text-align:center}
+.fusion-glyph{align-items:center;display:flex;gap:20px;justify-content:center;margin:25px auto}
+.fusion-glyph span{align-items:center;background:rgba(189,154,255,.12);border:1px solid rgba(189,154,255,.4);border-radius:50%;color:#e4d5ff;display:flex;font-size:34px;height:76px;justify-content:center;width:76px}
+.fusion-glyph i{color:#bd9aff;font-style:normal}
+.fusion-recipe{align-items:center;background:rgba(255,255,255,.035);display:flex;flex-wrap:wrap;gap:10px;justify-content:center;margin-top:25px;padding:16px}
+.fusion-recipe span{color:#e2d5f7}.fusion-recipe b{color:#9c8bb8}.fusion-recipe strong{color:#d4baff}
+.astral-saved span{color:#898198;display:block;font-size:10px}
+.market-layout{grid-template-columns:minmax(260px,.75fr) minmax(0,1.25fr)}
+.market-heading{align-items:end;display:flex;justify-content:space-between}
+.market-heading h2{margin-bottom:20px}.market-heading>span{color:#aaa5bd;font-size:11px}
+.market-filters{display:grid;gap:10px;grid-template-columns:1fr 170px;margin:12px 0 17px}
+.market-list{display:grid;gap:11px}
+.market-card{align-items:start;display:grid;gap:15px;grid-template-columns:34px 1fr auto;padding:19px}
+.market-card-icon{align-items:center;background:rgba(189,154,255,.12);border-radius:50%;color:#d4baff;display:flex;font-size:21px;height:34px;justify-content:center}
+.market-card h3{font-family:Manrope,sans-serif;font-size:16px;margin:3px 0 6px}
+.market-card p:not(.astral-kicker){color:#aaa5bd;font-size:11px;line-height:1.7;margin:0 0 8px}
+.market-card span{color:#8f879f;font-size:10px}
+.market-card>strong{color:#d3baff;font-size:10px;font-weight:600}
+.astral-notice{color:#c9b4f4;font-size:11px;line-height:1.6}
+.bridge-emblem{align-items:center;background:radial-gradient(circle,rgba(189,154,255,.28),rgba(189,154,255,.03));border:1px solid rgba(189,154,255,.35);border-radius:50%;color:#d8c2ff;display:flex;font-size:60px;height:140px;justify-content:center;margin:22px auto;width:140px}
+.player-code{background:rgba(255,255,255,.04);margin:24px 0;padding:17px;text-align:center}
+.player-code span,.player-code strong{display:block}.player-code span{color:#91889f;font-size:9px;letter-spacing:.17em}.player-code strong{color:#e4d5ff;font-size:20px;letter-spacing:.1em;margin-top:8px}
+.bridge-status{border-top:1px solid rgba(231,220,255,.12);color:#b5adca;font-size:10px;margin-top:28px;padding-top:17px}
+.status-dot{background:#8bd8b1;border-radius:50%;display:inline-block;height:7px;margin-right:8px;width:7px}
+.status-prototype{color:#827a91;display:block;margin:8px 0 0 15px}
+@media(max-width:900px){.astral-workspace,.market-layout{grid-template-columns:1fr}.market-layout{gap:18px}}
+@media(max-width:560px){.astral-panel{padding:20px}.astral-stat-grid{grid-template-columns:repeat(2,1fr)}.market-filters{grid-template-columns:1fr}.market-card{grid-template-columns:28px 1fr}.market-card>strong{grid-column:2}.market-heading{align-items:start;flex-direction:column;gap:0}}
