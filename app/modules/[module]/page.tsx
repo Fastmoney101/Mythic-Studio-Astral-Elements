@@ -1,13 +1,10 @@
-import ModulePage, { modules } from "../../components/module-page";
+import { redirect } from "next/navigation";
 
-export function generateStaticParams() {
-  return Object.keys(modules).map((module) => ({ module }));
-}
-
-export default function NestedModuleRoute({
+export default async function NestedModuleRoute({
   params
 }: {
   params: Promise<{ module: string }>;
 }) {
-  return <ModulePage params={params} />;
+  const { module } = await params;
+  redirect(`/${module}`);
 }
