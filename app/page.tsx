@@ -1,50 +1,22 @@
+import Link from "next/link";
+
 const modules = [
-  {
-    number: "01",
-    name: "Spirit Forge",
-    description: "Imagine, customize, and evolve original elemental spirits.",
-    symbol: "✳"
-  },
-  {
-    number: "02",
-    name: "Power Academy",
-    description: "Learn new abilities, take on challenges, and grow your power.",
-    symbol: "✦"
-  },
-  {
-    number: "03",
-    name: "Weather Dominion",
-    description: "Shape atmospheric worlds and explore elemental weather.",
-    symbol: "☼"
-  },
-  {
-    number: "04",
-    name: "Fusion Lab",
-    description: "Experiment with combinations, transformations, and new forms.",
-    symbol: "⟡"
-  },
-  {
-    number: "05",
-    name: "Creator Market",
-    description: "A home for original digital creations and creator offerings.",
-    symbol: "◇"
-  },
-  {
-    number: "06",
-    name: "Game Bridge",
-    description: "Connect player profiles and compatible interactive worlds.",
-    symbol: "↗"
-  }
+  { number: "01", name: "Spirit Forge", slug: "spirit-forge", description: "Imagine, customize, and evolve original elemental spirits.", symbol: "✳" },
+  { number: "02", name: "Power Academy", slug: "power-academy", description: "Learn new abilities, take on challenges, and grow your power.", symbol: "✦" },
+  { number: "03", name: "Weather Dominion", slug: "weather-dominion", description: "Shape atmospheric worlds and explore elemental weather.", symbol: "☼" },
+  { number: "04", name: "Fusion Lab", slug: "fusion-lab", description: "Experiment with combinations, transformations, and new forms.", symbol: "⟡" },
+  { number: "05", name: "Creator Market", slug: "creator-market", description: "A home for original digital creations and creator offerings.", symbol: "◇" },
+  { number: "06", name: "Game Bridge", slug: "game-bridge", description: "Connect player profiles and compatible interactive worlds.", symbol: "↗" }
 ];
 
 export default function Home() {
   return (
     <main>
       <header className="site-header">
-        <a className="wordmark" href="#home" aria-label="Mythic Studio home">
+        <Link className="wordmark" href="/" aria-label="Mythic Studio home">
           <span className="brand-mark" aria-hidden="true">✳</span>
           <span>MYTHIC <span className="wordmark-light">STUDIO</span></span>
-        </a>
+        </Link>
         <nav className="navigation" aria-label="Main navigation">
           <a href="#vision">The vision</a>
           <a href="#modules">Explore modules</a>
@@ -88,12 +60,12 @@ export default function Home() {
         </div>
         <div className="module-grid">
           {modules.map((module) => (
-            <article className="module-card" key={module.number}>
+            <Link href={`/${module.slug}`} className="module-card" key={module.number}>
               <div className="card-topline"><span>{module.number} / 06</span><span className="module-symbol" aria-hidden="true">{module.symbol}</span></div>
               <h3>{module.name}</h3>
               <p>{module.description}</p>
               <span className="card-arrow" aria-hidden="true">↗</span>
-            </article>
+            </Link>
           ))}
         </div>
       </section>
@@ -105,7 +77,7 @@ export default function Home() {
       </section>
 
       <footer className="site-footer">
-        <a className="wordmark" href="#home"><span className="brand-mark" aria-hidden="true">✳</span><span>MYTHIC <span className="wordmark-light">STUDIO</span></span></a>
+        <Link className="wordmark" href="/"><span className="brand-mark" aria-hidden="true">✳</span><span>MYTHIC <span className="wordmark-light">STUDIO</span></span></Link>
         <p>An original universe in the making.</p>
         <span>© {new Date().getFullYear()} Mythic Studio</span>
       </footer>
